@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <img src ="avatar.png" class="avatar">
+        <h1>Login here</h1>
+        <form action="class.html" method="POST">
+            <input type="text" id="username" name="username" placeholder="Enter Username" required />
+            <input type="password" id="password" name="password" placeholder="Enter Password" required />
+            <input type="submit" value="Login" />
+          </form>
+          <div class="error" id="error"></div>
+        </div>
+        <script>
+          // Validation for Login Credentials
+          const form = document.querySelector("form");
+          const error = document.querySelector("#error");
+    
+          form.addEventListener("submit", (event) => {
+            event.preventDefault();
+    
+            const username = document.querySelector("#username").value;
+            const password = document.querySelector("#password").value;
+            if (username === "student" && password === "123456") {
+              window.location.href = "class.html";
+              
+            } else {
+              error.innerHTML = "Invalid password or username";
+            }
+          });
+        </script>
+      </body>
+    </html>

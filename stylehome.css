@@ -1,0 +1,83 @@
+.home {
+    background-color: #000000;
+    padding: 8px;
+  }
+  rav button{ 
+    background-color:#000000; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  } 
+  
+   /* Style the button when it is hovered */
+  rav button:hover {
+    background-color: #29282879;
+  }
+  .home{
+    text-align: right;
+  }
+  .product{
+    text-align: center;
+  }
+  pro button {
+        background-color: #d17a17; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+  }
+  
+  /* Style the button when it is hovered */
+  pro button:hover {
+    background-color: #cc0000;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .text {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .banner {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+
+  .logo {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+  }
