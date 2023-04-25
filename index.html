@@ -71,7 +71,7 @@ input{
 ::placeholder{
     color: #e5e5e5;
 }
-input[type="button"]{
+input[type="submit"]{
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
@@ -98,7 +98,7 @@ input[type="button"]{
             <input type="text" id="username" name="username" placeholder="Enter Username" required />
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter Password" required />
-            <input type="button" value="Login" />
+            <input type="submit" value="Login" />
             <div class="error" id="error"></div>
           </form>
 
@@ -107,7 +107,7 @@ input[type="button"]{
             const form = document.querySelector("form");
             const error = document.querySelector("#error");
       
-            form.addEventListener("button", (event) => {
+            form.addEventListener("submit", (event) => {
               event.preventDefault();
       
               const username = document.querySelector("#username").value;
